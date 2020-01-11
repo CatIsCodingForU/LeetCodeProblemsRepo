@@ -10,5 +10,3 @@ nums = [3,2,4]
 target = 6
 
 print(ara(nums, target))
-
-print("it worked\n")
