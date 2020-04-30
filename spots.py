@@ -1,7 +1,7 @@
 def max_price_of_parts(pairs, pack_weight):
     weights = sorted(pairs, key=lambda x: x[0] / x[1], reverse=True)
     sums, current_weight = 0, 0
-    while current_weight + weights[0][1] < pack_weight:
+    while current_weight + weights[0][1] <= pack_weight:
         current_weight += weights[0][1]
         sums += weights[0][0]
         weights.remove(weights[0])
